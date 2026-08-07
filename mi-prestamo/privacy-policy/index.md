@@ -113,6 +113,6 @@ La fecha de la última actualización se indicará al inicio de esta página.
 
 Para consultas relacionadas con esta política de privacidad puedes contactar a BonMenDev en:
 
-**Correo electrónico:** pendiente de definir.
+bonmendev.apps@gmail.com.
 
 Antes de la publicación oficial en Google Play, esta sección será actualizada con el correo público de soporte del desarrollador.
