@@ -1,29 +1,62 @@
 # My Loan Privacy Policy
 
-Intended effective date: version 1.0.0.
+Effective date: September 9, 2026.
 
-My Loan (Mi Préstamo in Spanish) is an app developed by BonMenDev. It is a financial calculator that processes loan amounts, rates, terms, and dates entered by the user locally on the device.
+My Loan is a BonMenDev app for calculating and managing personal loans. It does
+not provide financial advice.
 
-## Data, storage, and transmission
+## Data and local storage
 
-Version 1 does not collect, transmit, share, or persist loan data. It requires no account and has no server, advertising, analytics, tracking, or cloud synchronization. Entered data remains in memory while the app is being used.
+Loan amounts, rates, terms, names, payments, notes, fees, reminders, and
+preferences entered by the user are processed and stored locally on the device
+using SQLite. No account is created, and BonMenDev operates no server that
+receives this information.
 
-## Third parties and permissions
+Uninstalling the app or clearing its data may remove this information. Users can
+create a local `.miprestamo` backup; it can contain entered financial data and is
+not encrypted.
 
-No advertising, analytics, or tracking SDK is integrated. The release binary requests no sensitive permissions or Internet access. It does not use the camera, microphone, location, contacts, storage, SMS, or call logs.
+## Reports, backups, and external apps
 
-## Children
+My Loan can generate PDF reports and backups locally. They only leave the device
+when the user chooses to save, print, or share them through Android's picker or
+share sheet. The destination app or service processes the file under its own
+policies. My Loan performs no automatic cloud sync or cloud backup.
 
-The app is not specifically directed at children and does not knowingly collect children's personal information.
+## Reminders and permissions
 
-## Changes
+Reminders are scheduled locally. On Android 13 or later, the app requests
+`POST_NOTIFICATIONS` only when the user attempts to enable this feature. It
+declares `RECEIVE_BOOT_COMPLETED` to restore reminders after a reboot or app
+update; the notification plugin also declares `VIBRATE`. It does not request
+exact-alarm access.
 
-This policy will be reviewed before any feature that collects, stores, or transmits data is introduced. Changes will be published with a new effective date.
+The app does not use the camera, microphone, location, contacts, SMS, call logs,
+or broad storage permissions.
+
+## Third parties and tracking
+
+My Loan Pro is offered as a one-time purchase processed by Google Play. Google
+may process information needed to complete, restore, and manage the transaction
+under its own policies. My Loan queries Google Play for the product, localized
+price, and purchase status; BonMenDev does not receive or store full payment card
+numbers or other payment credentials.
+
+No advertising, analytics, telemetry, tracking, authentication, or proprietary
+cloud service is integrated. PDF, sharing, file, notification, and purchase
+libraries are reviewed against the final artifact before release.
+
+## Children and changes
+
+The app is not specifically directed at children and does not knowingly collect
+children's personal information. This policy will be updated if practices,
+permissions, or integrations change.
 
 ## Contact
 
 Developer/brand: **BonMenDev**.
 
-Developer contact: **TODO: DEVELOPER_EMAIL**.
+Contact: **bonmendev.apps@gmail.com**.
 
-Public URL required by Google Play: **TODO: PUBLIC_PRIVACY_POLICY_URL**.
+Public Google Play URL:
+**https://cristhianbonillamendez-pixel.github.io/bonmendev/mi-prestamo/privacy-policy/**.
